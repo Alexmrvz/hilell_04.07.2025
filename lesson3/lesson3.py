@@ -25,3 +25,4 @@ number1 = float(input("Enter the first number: "))
 number2 = float(input("Enter the second number: "))
 operator = input("Enter the operation: ")
 calculator(number1, number2, operator)
+
