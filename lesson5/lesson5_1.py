@@ -8,7 +8,8 @@ if (
     any(c.isupper() for c in name) or
     any(c in string.punctuation and c != '_' for c in name) or
     name in keyword.kwlist or
-    name.count('_') > 1
+        name in keyword.kwlist or
+        '__' in name
 ):
     print(False)
 else:
