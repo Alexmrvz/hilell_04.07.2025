@@ -1,9 +1,11 @@
-number = (input("Enter a 4-digit number"))
-if len(number) != 4
-if len(number) != 0,1,2,3,4,5,6,7,8,9:
-    print("Error: enter 4 digit number")
-else:
-    print(number[0])
-    print(number[1])
-    print(number[2])
-    print(number[3])
+number = int(input("Enter a 4-digit number"))
+
+digit1 = number // 1000
+digit2 = (number // 100) % 10
+digit3 = (number // 10) % 10
+digit4 = number % 10
+
+print(digit1)
+print(digit2)
+print(digit3)
+print(digit4)
