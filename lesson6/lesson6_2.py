@@ -5,16 +5,16 @@ seconds_in_a_hour = 3600
 seconds_in_a_minute = 60
 seconds_in_a_second = 1
 
-days = numbers_input // seconds_in_a_day
-extra_seconds = numbers_input % seconds_in_a_day    #посчитал дни и отсортировал остаток
+days = numbers_input // seconds_in_a_day    #counted the days
+extra_seconds = numbers_input % seconds_in_a_day    #sorted the remainder
 
-hours = extra_seconds // seconds_in_a_hour  #посчитал часы
+hours = extra_seconds // seconds_in_a_hour  #counted the hours
 extra_seconds %= seconds_in_a_hour
 
-minutes = extra_seconds // seconds_in_a_minute  #посчитал минуты
+minutes = extra_seconds // seconds_in_a_minute  #counted the minutes
 extra_seconds %= seconds_in_a_minute
 
-seconds = extra_seconds #посчитал секунды
+seconds = extra_seconds #counted the seconds
 
 hours_str = str(hours).zfill(2)
 minutes_str = str(minutes).zfill(2)
