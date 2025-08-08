@@ -1,11 +1,8 @@
-results = ()
-
 for user_input in iter(input, ''):
-    if not user_input.isdigit():
-        print("Invalid input.")
-        continue
+
 
     number = int(user_input)
+    number = abs(number)
 
     while number > 9:
         product = 1
@@ -14,7 +11,3 @@ for user_input in iter(input, ''):
         number = product
 
     print("Result:", number)
-
-    results = results + (number,)
-
-print("All results:", results)
