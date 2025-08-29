@@ -39,7 +39,6 @@ class Purchase:
         return f"User: {self.user}\nItems:\n{items_str}"
 
 
-# --- Пример с тестами из задания ---
 if __name__ == "__main__":
     lemon = Item('lemon', 5, "yellow", "small")
     apple = Item('apple', 2, "red", "middle")
