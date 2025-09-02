@@ -14,7 +14,6 @@
 
 
 number = input("Enter a 5 - digit number")
-
 number = str(number)
 reversed_number = number[::-1]
 print(reversed_number)

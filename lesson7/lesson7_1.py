@@ -1,8 +1,4 @@
 def say_hi(name: str, age: int) -> str:
-
-
-    if age < 0:
-        raise ValueError("Age cannot be negative")
     return f"Hi. My name is {name} and I'm {age} years old"
 
 assert say_hi("Alex", 32) == "Hi. My name is Alex and I'm 32 years old", 'Test1'
